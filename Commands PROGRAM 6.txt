@@ -1,0 +1,9 @@
+cc -Wall -c add.c sub.c mul.c div.c
+ar -cvq libmath.a add.0 sub.0 mul.0 div.0
+ar -t libmath.a
+cc -o main main.c libctest.a
+./main
+
+
+
+
